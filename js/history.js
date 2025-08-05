@@ -30,7 +30,7 @@ document.getElementById('btn-noakhali-donate').addEventListener('click', functio
     div.classList.add('bg-white-300', 'p-4', 'border-2', 'border-dashed', 'pl-20', 'pr-20', 'mb-4');
     div.innerHTML = `
     <div id="time-date">
-        <h3 class="font-bold">${noakhaliDonateInput} Taka is Donated ${noakhaliHeading}</h3>
+        <h3 class="font-bold">${noakhaliDonateInput} Taka is ${noakhaliHeading}</h3>
         <p>${formattedTime}</p>
     </div>
     `
@@ -68,7 +68,7 @@ document.getElementById('btn-feni-donate').addEventListener('click', function(ev
     div.classList.add('bg-white-300', 'p-4', 'border-2', 'border-dashed', 'pl-20', 'pr-20', 'mb-4');
     div.innerHTML = `
     <div id="time-date">
-        <h3 class="font-bold">${feniDonateInput} Taka is Donated ${feniHeading}</h3>
+        <h3 class="font-bold">${feniDonateInput} Taka is ${feniHeading}</h3>
         <p>${formattedTime}</p>
     </div>
     `
