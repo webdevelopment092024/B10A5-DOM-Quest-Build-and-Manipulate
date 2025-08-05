@@ -20,7 +20,7 @@
     </script>
 </head>
 <body class="">
-    <header>
+    <header class="sticky  top-0 z-50 " id="header-id">
         <!-- Navigaton Section Start -->
         <section class="flex justify-between items-center bg-orange-50 pt-3 pb-8 pl-5 pr-5 gap-8 md:gap-0">
             <div class="">
@@ -35,7 +35,7 @@
                 <div class="">
                 <div class="stat">
                     <div class="flex text-lg font-bold gap-2">
-                        <div>5500</div>
+                        <div id="my-balance">5500</div>
                         <div>TK</div>
                     </div>
                 </div>
@@ -44,7 +44,7 @@
         </section>
         <!-- Navigaton Section End -->
          <!-- Donation and history section start  -->
-        <section class="flex justify-center gap-6 mt-5 md:mt-20">
+        <section class="flex justify-center gap-6 mt-5 md:mt-20 md:pb-10">
                 <button class="btn bg-colorprimary text-lg font-bold pl-6 pr-6">Donation</button>
                 <button class="btn bg-white text-lg font-bold pl-6 pr-6 border-2 border-solid">History</button>
         </section>
@@ -60,14 +60,14 @@
                 src="assets/noakhali.png"
                 alt="Movie" />
             </figure class="mb-6 md:mb-0">
-            <div class="card-body flex pt-0 pb-0 pl-0 lg:pl-8">
+            <div class="card-body flex pt-0 pb-0 pl-0 lg:pl-8 ">
                 <!-- Coin and Tk Start -->
                 <div class="flex justify-left items-center bg-gray-200 max-w-fit h-fit pl-2 pr-2 rounded-lg ">
                     <img src="assets/coin.png" alt="">
                     <div class="">
                     <div class="stat">
                         <div class="flex text-lg font-bold gap-2">
-                            <div>0</div>
+                            <div id="noakhali-donation-balance">0</div>
                             <div>TK</div>
                         </div>
                     </div>
@@ -76,8 +76,8 @@
                 <!-- Coin and Tk End -->
                 <h2 class="card-title font-bold">Donate for Flood at Noakhali, Bangladesh</h2>
                 <p> The recent floods in Noakhali have caused significant damage to <br> homes  infrastructure. Your donation will help provide essential <br> supplies and  to those affected by this disaster. Every contribution, <br> big or small, makes  difference. Please join us in supporting the relief <br> efforts and making a positive impact on the lives of those in need.</p>
-                <input type="number" name="" id="" placeholder="Write Donation Amount" class="py-3 border-2 p-3">
-                <button class="btn btn-primary w-full bg-colorprimary text-black text-lg font-bold border-none">Donate Now</button>
+                <input id="noakhali-donate-input" type="number" name="" id="" placeholder="Write Donation Amount" class="py-3 border-2 p-3">
+                <button id="btn-noakhali-donate" class="btn btn-primary w-full bg-colorprimary text-black text-lg font-bold border-none">Donate Now</button>
             </div>
             </div>
         </section>
@@ -95,7 +95,7 @@
                     <div class="">
                     <div class="stat">
                         <div class="flex text-lg font-bold gap-2">
-                            <div>600</div>
+                            <div id="feni-donation-balance">600</div>
                             <div>TK</div>
                         </div>
                     </div>
@@ -104,8 +104,8 @@
                 <!-- Coin and Tk End -->
                 <h2 class="card-title font-bold">Donate for Flood Relief in Feni,Bangladesh</h2>
                 <p>The recent floods in Feni have devastated local communities, leading <br> to severe disruption and loss. Your generous donation will help <br> provide immediate aid, including food, clean water, and medical <br> supplies, to those affected by this calamity. Together, we can offer <br> crucial support and help rebuild lives in the aftermath of this disaster. <br> Every contribution counts towards making a real difference. Please <br> consider donating today to assist those in urgent need.</p>
-                <input type="number" name="" id="" placeholder="Write Donation Amount" class="py-3 border-2 p-3">
-                <button class="btn btn-primary w-full bg-colorprimary text-black text-lg font-bold border-none">Donate Now</button>
+                <input id="feni-donate-input" type="number" name="" id="" placeholder="Write Donation Amount" class="py-3 border-2 p-3 ">
+                <button id="btn-feni-donate" class="btn btn-primary w-full bg-colorprimary text-black text-lg font-bold border-none">Donate Now</button>
             </div>
             </div>
         </section>
@@ -123,7 +123,7 @@
                     <div class="">
                     <div class="stat">
                         <div class="flex text-lg font-bold gap-2">
-                            <div>2400</div>
+                            <div id="quota-protest-donation-balance">2400</div>
                             <div>TK</div>
                         </div>
                     </div>
@@ -132,8 +132,8 @@
                 <!-- Coin and Tk End -->
                 <h2 class="card-title font-bold">Aid for Injured in the Quota Movement</h2>
                 <p>The recent Quota movement has resulted in numerous injuries and <br> significant hardship for many individuals. Your support is crucial in <br> providing medical assistance, rehabilitation, and necessary supplies <br> to those affected. By contributing, you help ensure that injured <br>individuals receive the care and support they need during this <br> challenging time. Every donation plays a vital role in alleviating their <br> suffering and aiding in their recovery. Please consider making a <br> donation to support these brave individuals in their time of need.</p>
-                <input type="number" name="" id="" placeholder="Write Donation Amount" class="py-3 border-2 p-3">
-                <button class="btn btn-primary w-full bg-colorprimary text-black text-lg font-bold border-none">Donate Now</button>
+                <input id="quota-protest-donate-input" type="number" name="" id="" placeholder="Write Donation Amount" class="py-3 border-2 p-3">
+                <button id="btn-quota-protest-donate" class="btn btn-primary w-full bg-colorprimary text-black text-lg font-bold border-none">Donate Now</button>
             </div>
             </div>
         </section>
@@ -149,5 +149,7 @@
     <footer class="bg-orange-50 h-20">
 
     </footer>
+    <script src="js/utilities.js"></script>
+    <script src="js/donate.js"></script>
 </body>
 </html>
