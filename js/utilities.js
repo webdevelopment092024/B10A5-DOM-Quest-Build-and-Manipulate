@@ -24,3 +24,9 @@ window.addEventListener('scroll', function() {
             //         document.getElementById('header-id').style.backgroundColor = 'Apricot';
             //     }
             // });
+
+function showSectionByID(id){
+    document.getElementById('donation-whole-section').classList.add('hidden');
+    document.getElementById('history-whole-section').classList.add('hidden');
+    document.getElementById(id).classList.remove('hidden');
+}
