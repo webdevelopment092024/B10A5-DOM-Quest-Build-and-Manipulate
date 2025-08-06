@@ -9,7 +9,7 @@ function getTextDataByID(id){
     return textValueInNumber;
 }
 
-// Header Color Set
+// Header Color Set for home
 window.addEventListener('scroll', function() {
     if (window.scrollY > 200) {
         document.getElementById('header-id').style.backgroundColor = 'Cornsilk';

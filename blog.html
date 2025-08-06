@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donation Bangladesh</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script> 
+    <script>
+        tailwind.config = {
+        theme: {
+            extend: {
+            colors: {
+                clifford: '#da373d',
+                colorprimary: '#B4F461',
+            }
+            }
+        }
+        }
+    </script>
+</head>
+<body class="">
+    <header class="sticky  top-0 z-50 w-full" id="blog-header-id">
+        <!-- Navigaton Section Start -->
+        <section class="flex justify-between items-center bg-orange-50 pt-3 pb-8 pl-5 pr-5 gap-8 md:gap-0">
+            <div class="">
+                <button class="btn bg-colorprimary text-sm md:text-lg font-bold pl-3 md:pl-6 pr-3 md:pr-6" id="home-link"><a href="index.html">Home</a></button>
+            </div>
+            <div class="flex justify-between items-center gap-4"> 
+                <img src="assets/logo.png" alt="">
+                <h2 class="text-xs md:text-lg font-bold">Donate Bangladesh</h2>
+            </div>
+            <div class="flex justify-center items-center">
+                <img src="assets/coin.png" alt="">
+                <div class="">
+                <div class="stat">
+                    <div class="flex text-lg font-bold gap-2">
+                        <div id="my-balance">5500</div>
+                        <div>TK</div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section>
+        <!-- Navigaton Section End -->
+    </header>
+    <main>
+        <section class="md:container mx-auto space-y-3">
+            <h1 class="text-5xl font-bold mt-20 mb-10">Important FAQ</h1>
+            <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
+            <div class="collapse-content">
+                <p>The Document Object Model (DOM) is a programming interface for web documents, specifically HTML and XML. It represents the structure of a document as a logical tree, where each part of the document (elements, attributes, text) is represented as a node in the tree. </p>
+            </div>
+            </div>
+            <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
+            <div class="collapse-content">
+                <p>The id selector uses the id attribute of an HTML element to select a specific element. The id of an element is unique within a page, so the id selector is used to select one unique element! To select an element with a specific id, write a hash (#) character, followed by the id of the element.</p>
+            </div>
+            </div>
+            <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and why is it useful?</div>
+            <div class="collapse-content">
+                <p>Event delegation is a technique in JavaScript where you attach a single event listener to a parent element instead of attaching individual listeners to multiple child elements. This single listener captures events that "bubble up" from the child elements, allowing you to handle events for many elements efficiently. </p>
+            </div>
+            </div>
+            <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the DOM?</div>
+            <div class="collapse-content">
+                <p>DOM data manipulation arises when a script writes controllable data to a field within the DOM that is used within the visible UI or client-side application logic.</p>
+            </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-orange-50 h-16" style="position: fixed; left: 0; bottom: 0; width: 100%;">
+
+    </footer>
+    <script src="js/utilities.js"></script>
+    <script src="js/donate.js"></script>
+    <script src="js/history.js"></script>
+    <script src="js/features.js"></script>
+    <script src="js/blog-home.js"></script>
+</body>
+</html>

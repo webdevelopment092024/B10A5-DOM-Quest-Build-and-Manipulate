@@ -9,9 +9,6 @@ document.getElementById('btn-noakhali-donate').addEventListener('click', functio
         return;
     }
 
-    if(noakhaliDonateInput=" "){
-        return;
-    }
 
 
     const myBalance = getTextDataByID('my-balance');
@@ -36,9 +33,6 @@ document.getElementById('btn-feni-donate').addEventListener('click', function(ev
     const feniDonateInput = getInputDataByID('feni-donate-input');
     if(feniDonateInput<=0){
         alert('Please provide a value');
-        return;
-    }
-        if(feniDonateInput=" "){
         return;
     }
 
@@ -66,16 +60,13 @@ document.getElementById('btn-quota-protest-donate').addEventListener('click', fu
         return;
     }
 
-        if(quotaProtestDonateInput=" "){
-        return;
-    }
-
 
     const myBalance = getTextDataByID('my-balance');
     if(myBalance<quotaProtestDonateInput){
         alert('You have no sufficient balance');
         return;
     }
+
 
     const newBalanceOfMyBalance = myBalance-quotaProtestDonateInput;
     document.getElementById('my-balance').innerText = newBalanceOfMyBalance;
